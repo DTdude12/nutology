@@ -2,10 +2,12 @@ header, footer{
     background:#333a40;
     color: white;
     margin: 0 auto;
-    padding:2px 2px;
+    padding:1px 1px;
     max-width: 100%;
-    align-content: center;
+    text-align: center;
 }
+
+
 
 html {
     background: #f7f7f7;
@@ -16,9 +18,8 @@ body{
     background: white;
     text-align: center;
     margin: 0 auto;
-    padding: 5px;
+    padding: 0px;
     color: rgb(49, 46, 46);
-    /* width: 80vw; */
 }
 
 header h1, nav{
@@ -29,9 +30,11 @@ header h1, nav{
 
 header h1 {
     max-width: 100%;
-    width: 550px;
-    text-align: center;
+    /* width: 600px; */
+    text-align: left;
+    margin-left:10px;
 }
+
 
 input[type="search"]{
     display:inline-block;
@@ -61,20 +64,11 @@ header .button{
 main{
     margin: 0 auto;
     padding: 10px;
-    width: 68%;
+    width: 80%;
     display: inline-block;
 
 }
 
-
-aside{
-    margin: 0 auto;
-    padding: 1px;
-    width: 100%;
-    display: inline;
-    vertical-align: top;
-    margin: 0 auto;
-}
 
 aside a{
     color: inherit;
@@ -85,13 +79,7 @@ aside a:hover{
     color:#C0C0C0;
 }
 
-.product_header{
-    color:#333a40;
-    padding: 5px;
-    width: 100%;
-    /* display: inline-block; */
-    text-align: center;
-}
+
 
 
 .product{
@@ -126,19 +114,46 @@ aside a:hover{
     margin: 0 auto;
 }
 
-#position{
-    top:0px;
-    position: relative;
-}
 
 footer h4{
     text-align: right;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 480px) {
     input[type="search"]{
         width:40%;
         margin-left:2em;
+        display: inline-block;
+        font-size:0.7em;
+    }
+    aside{
+        margin: 0 auto;
+        padding: 1px;
+        width: 100%;
+        display: inline;
+        vertical-align: top;
+        margin: 0 auto;
+        font-size:0.7em;
+    }
+    .product{
+        width:46%;
+        display: inline-block;
+        font-size:0.7em;
+    }
+    .product_header{
+        color:#333a40;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        font-size:0.7em;
+    }
+}
+@media (min-width:1200px){
+
+    body{
+        max-width:80vw;
     }
     .product{
         width:30%;
